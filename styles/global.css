@@ -1,0 +1,52 @@
+.icon{
+    width: 100%;
+    height: 100%;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+.transparent{
+    opacity: 0;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.none{
+    display: none;
+}
+
+.grey{
+    border: 1px solid grey;
+}
+
+.green{
+    border: 1px solid green;
+}
