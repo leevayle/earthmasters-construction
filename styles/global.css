@@ -50,3 +50,7 @@
 .green{
     border: 1px solid green;
 }
+
+.h-auto{
+    height: auto;
+}

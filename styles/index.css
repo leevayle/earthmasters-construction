@@ -2,13 +2,138 @@ body,html{
     margin:0;
     overflow-x: hidden;
     background-color: aliceblue;
+    scroll-behavior: smooth;
 }
 
-.nav{
-    height: 100px;
+.full{
+    margin: 0;
+    height: auto;
+    min-width: 100vw;
+    min-height: 99.5vh;
     background-color: rgb(255, 255, 255);
-    
+}
+.nav{
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.062) 0px 15px 30px -5px, rgba(0, 0, 0, 0.04) 0px 0px 8px -5px;    
+    position: fixed;
+}
 
+body::-webkit-scrollbar {
+    width: 8px; /* Set a specific width for the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #b9b9b9; /* Color for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color for the scrollbar track */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo{
+    width: 10%;
+    min-width: 100px;
+    height: 100%;
+    margin-left: 30px;
+}
+.links-cont{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    padding-right: 50px;
+}
+.links{
+    height: 50%;
+    width: auto;
+    max-width: 99%;
+    margin-top: 25px;
+}
+.link{
+    text-align: center;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family: 'cocomat',sans-serif;
+}
+.linktext{
+    font-size: normal;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #472000;
+    margin-right: 7px;
+}
+
+.linktext:hover .expand{
+    width: 100%;
+    
+}
+
+.expand{
+    width: 0%;
+    height: 4px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(219, 150, 0);
+    bottom: 0px;
+    transition: width 0.3s ease;
+}
+.active{
+    width: 100% !important;
+}
+
+.quote{
+    background-color: rgb(216, 140, 0);
+    height: auto;
+    padding-top: 10px;
+    padding-left:20px ;
+    padding-right: 20px;
+    margin-top: -10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.quote:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 179, 36);
 }
 
 
+
+
+
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: #969696;
+    padding: 10px 10px 15px 10px 10px;
+}
+
+
+
+
+
+
+
+/* Media querries */
+
+@media screen and (max-width:450px) {
+    .nav{
+        height: 70px;
+    }
+    .links{
+        margin-top: 17px;
+    }
+    
+}
