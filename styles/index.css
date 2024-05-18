@@ -18,6 +18,12 @@ body,html{
     box-shadow: rgba(0, 0, 0, 0.062) 0px 15px 30px -5px, rgba(0, 0, 0, 0.04) 0px 0px 8px -5px;    
     position: fixed;
 }
+.nav-limiter{
+    max-width: 1500px;
+    margin: auto;
+    height: 100%;
+    position: sticky;
+}
 
 body::-webkit-scrollbar {
     width: 8px; /* Set a specific width for the scrollbar */
@@ -90,6 +96,12 @@ a{
     width: 100% !important;
 }
 
+.mobile{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
 .quote{
     background-color: rgb(216, 140, 0);
     height: auto;
@@ -106,7 +118,76 @@ a{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 179, 36);
 }
+.getquote{
+    margin: auto;
+}
 
+.quote-phone{
+    background-color: rgb(216, 140, 0);
+    height: auto;
+    padding-top: 5px;
+    padding-left:15px ;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    font-family: 'cocomat',sans-serif;
+    margin-right: 25px;
+}
+.svg{
+    stroke: rgb(160, 104, 0) !important;
+    transition: ease-in-out 0.2s;
+}
+.quote-phone:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 179, 36);
+    cursor: pointer;
+}
+.mobilenav:hover .svg{
+    stroke: #4b2200 !important;
+}
+.mobilenav:hover{
+    cursor: pointer;
+}
+
+.sidenav{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000096;
+    z-index: 1;
+    display: none;
+}
+.sidenav-limiter{
+    width: 90%;
+    height: 100%;
+    max-width: 350px;
+    border-bottom: 1px solid grey;
+    background-color: #f1f1f1;
+    margin-right: auto;
+    left: -90%;
+    transition: left 0.3s ease-in-out;
+}
+.mobilenavcont{
+    width: 85%;
+    height: 100%;
+}
+.mobilenavclose{
+    width: 15%;
+    height: 40px;
+    margin-top: 20px;
+}
+.svg1{
+    fill: rgb(173, 173, 173) !important;    
+    transition: ease-in-out 0.2s;
+}
+.mobilenavclose:hover .svg1{
+    fill: rgb(145, 99, 0) !important;
+}
+.mobilenavclose:hover{
+    cursor: pointer;
+}
 
 
 
@@ -128,12 +209,38 @@ footer{
 
 /* Media querries */
 
+
+
+
+@media screen and (max-width:1065px) {
+    .link{
+        display: none;
+    }
+    .links-cont{           
+         padding-right: 20px;
+}
+.mobile{
+    display: flex;
+}
+}
+
+
+
 @media screen and (max-width:450px) {
     .nav{
         height: 70px;
     }
     .links{
         margin-top: 17px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:320px) {
+    .quote-phone{
+        display: none;
     }
     
 }

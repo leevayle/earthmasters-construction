@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earthmasters construction</title>
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="icon" type="image/x-icon" href="images/icon-v1.0.0.png">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
@@ -12,85 +12,112 @@
 <body>
 
     <div class="full-width full-height full ">
+
+        <div id="sidenav" class="fixed absolute sidenav">
+            <div id="mobilenavcont" class="flex fixed absolute sidenav-limiter">
+                <div  class="mobilenavcont flex ">
+
+                </div>
+                <div id="close" class="mobilenavclose flex ">
+                    <svg class="icon svg1"  viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path  d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
+                </div>
+            </div>
+        </div>
+
         <section id="nav" >
             <nav class="full-width fixed flex nav ">
-                <div class="logo ">
-                    <a href="#">
-                        <div class="icon">
-                            <img class="full-height" src="images/Earthmasters.png" alt="Earthmasters">
-                        </div>
-                    </a>
-                </div>
-                <div class="flex links-cont ">
-                    <div class="full-width flex links ">
-                        <div class="link">
-                            <a href="#">
-                                <div class="block relative linktext active">
-                                    Home
-                                    <div class="absolute expand active"></div>
-                                </div>  
-                            </a>                                  
-                        </div>
-
-                        
-                        <div class="link">
-                            <a href="#">
-                                <div class="block relative linktext ">
-                                    About Us
-                                    <div class="absolute expand"></div>
-                                </div>  
-                            </a>                                  
-                        </div>
-
-                        <div class="link">
-                            <a href="#">
-                                <div class="block relative linktext ">
-                                    Projects
-                                    <div class="absolute expand"></div>
-                                </div>  
-                            </a>                                  
-                        </div>
-
-                        <div class="link">
-                            <a href="#">
-                                <div class="block relative linktext ">
-                                    Our services
-                                    <div class="absolute expand"></div>
-                                </div>  
-                            </a>                                  
-                        </div>
-
-                        <div class="link">
-                            <a href="#">
-                                <div class="block relative linktext ">
-                                    Contact Us
-                                    <div class="absolute expand"></div>
-                                </div>  
-                            </a>                                  
-                        </div>
-
-                        <div class="link">
-                            <a href="#">
-                                <div class="block relative linktext ">
-                                    Our blog
-                                    <div class="absolute expand"></div>
-                                </div>  
-                            </a>                                  
-                        </div>
-
-                        <div class="link">
-                            <a href="#">
-                                <div class="block relative linktext quote ">
-                                    Get a quote
-                                    
-                                </div>  
-                            </a>                                  
-                        </div>
-                        
+                <div class="nav-limiter full-width flex ">
+                    <div class="logo ">
+                        <a href="#">
+                            <div class="icon">
+                                <img class="full-height" src="images/Earthmasters-v1.0.0.png" alt="Earthmasters">
+                            </div>
+                        </a>
                     </div>
+                    <div class="flex links-cont ">
+                        <div class="full-width flex links ">
+                            <div class="link">
+                                <a href="#">
+                                    <div class="block relative linktext active">
+                                        Home
+                                        <div class="absolute expand active"></div>
+                                    </div>  
+                                </a>                                  
+                            </div>
 
+                            
+                            <div class="link">
+                                <a href="#">
+                                    <div class="block relative linktext ">
+                                        About Us
+                                        <div class="absolute expand"></div>
+                                    </div>  
+                                </a>                                  
+                            </div>
+
+                            <div class="link">
+                                <a href="#">
+                                    <div class="block relative linktext ">
+                                        Projects
+                                        <div class="absolute expand"></div>
+                                    </div>  
+                                </a>                                  
+                            </div>
+
+                            <div class="link">
+                                <a href="#">
+                                    <div class="block relative linktext ">
+                                        Our services
+                                        <div class="absolute expand"></div>
+                                    </div>  
+                                </a>                                  
+                            </div>
+
+                            <div class="link">
+                                <a href="#">
+                                    <div class="block relative linktext ">
+                                        Contact Us
+                                        <div class="absolute expand"></div>
+                                    </div>  
+                                </a>                                  
+                            </div>
+
+                            <div class="link">
+                                <a href="#">
+                                    <div class="block relative linktext ">
+                                        Our blog
+                                        <div class="absolute expand"></div>
+                                    </div>  
+                                </a>                                  
+                            </div>
+
+                            <div class="link">
+                                <a href="#">
+                                    <div class="block relative linktext quote ">
+                                        Get a quote
+                                        
+                                    </div>  
+                                </a>                                  
+                            </div>
+
+                            <!-- Mobile navigatio -->
+                            <div class="flex mobile  ">
+                                <div class="flex getquote">
+                                    <div class="quote-phone">Talk to Us</div>
+                                </div>
+                                <div class="mobilenav" id="open">
+                                    <svg class="full-height svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Menu / Menu_Alt_02">
+                                        <path id="Vector" d="M11 17H19M5 12H19M11 7H19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
                 </div>
-                
             </nav>
         </section>
 
