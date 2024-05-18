@@ -2,3 +2,8 @@
     font-family: 'cocomat';
     src: url(/fonts/cocomat.ttf) format('truetype');
 }
+
+@font-face {
+    font-family: 'cocomat';
+    src: url(./fonts/cocomat.ttf) format('truetype');
+}
