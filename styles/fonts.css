@@ -2,3 +2,28 @@
     font-family: 'cocomat';
     src: url('../fonts/cocomat.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mitr';
+    src: url('../fonts/Mitr-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'russo one';
+    src: url('../fonts/RussoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'lexand';
+    src: url('../fonts/LexendDeca-VariableFont_wght.ttf') format('truetype');
+}

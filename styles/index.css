@@ -4,6 +4,11 @@ body,html{
     background-color: aliceblue;
     scroll-behavior: smooth;
 }
+::selection {
+    background-color: rgb(134, 110, 0); /* Adjust the color as desired */
+    color: inherit; /* Inherit the original text color */
+  }
+  
 
 .full{
     margin: 0;
@@ -17,6 +22,7 @@ body,html{
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.062) 0px 15px 30px -5px, rgba(0, 0, 0, 0.04) 0px 0px 8px -5px;    
     position: fixed;
+    z-index: 1;
 }
 .nav-limiter{
     max-width: 1500px;
@@ -117,6 +123,7 @@ a{
 .quote:hover{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 179, 36);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .getquote{
     margin: auto;
@@ -156,7 +163,7 @@ a{
     width: 100%;
     height: 100vh;
     background-color: #00000096;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 .sidenav-limiter{
@@ -188,6 +195,112 @@ a{
 .mobilenavclose:hover{
     cursor: pointer;
 }
+
+
+/* Main home area */
+
+.home{
+    background-image: url(../images/bgs/man-looking.jpg);
+    /* background: fixed; */
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    background-origin: padding-box;
+    background-position-x: center;
+    background-position-y: center;
+    min-height: 100vh;
+    transition: background-image 1s ease-in-out; 
+}
+.home.fade-out {
+    opacity: 0; /* Gradually decrease opacity for fading out */
+    transition-delay: 0s; /* Remove delay for immediate fade-out */
+  }
+  
+  .home.fade-in {
+    opacity: 1; /* Gradually increase opacity for fading in */
+    transition-delay: 1s; /* Delay the fade-in after the fade-out */
+  }
+  
+.home-filter{
+    height: auto;
+    min-height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.829) 60%, rgba(0, 0, 0, 0.308));
+    padding-top: 100px;
+      
+}
+.title-cont{
+    height: 25%;
+    width: auto;
+    max-width: 55%;
+    margin: auto;
+    text-align: center;
+    
+}
+.title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'russo one',sans-serif;    
+    padding-top: 50px;
+    bottom: 0px;
+}
+.sub{
+    width: 45%;
+    margin: auto;
+}
+.subtitle{
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'lexand',sans-serif;
+    width: auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.actionbtn{
+    height: auto;
+    bottom: 0px;
+}
+.actionbtn{
+    width: auto;
+    max-width: 200px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+.homebtn {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(216, 140, 0);
+    color: #ffffff;
+    border-radius: 30px;
+    margin-top: 50px;
+    font-family: 'rubik', sans-serif;
+    font-size: large;
+    display: flex; /* New addition */
+    align-items: center; /* New addition */
+    justify-content: center; /* New addition */
+    transition: 0.2s ease-in-out;
+  }
+  .homebtn:hover{
+    background-color: rgb(255, 179, 36);
+    color: #000000;
+  }
+  .bottom-quote{
+    bottom: 0px;
+    background-color: #00000098;
+    height: 80px;
+    color: #b9b9b9;
+    font-family: 'cocomat',sans-serif;
+    display: flex; /* New addition */
+    align-items: center; /* New addition */
+    justify-content: center; /* New addition */
+    transition: 0.2s ease-in-out;
+}
+  
+
 
 
 
@@ -224,6 +337,28 @@ footer{
 }
 }
 
+@media screen and (max-width:646px) {
+.title-cont{
+    width: 100%;
+}
+.title{
+    /* font-size: 35px; */
+}
+.title-cont{
+    max-width: 100%;
+    
+}
+.sub{
+    width: 95%;
+}
+}
+@media screen and (max-width:1246px) {
+   .sub{
+    margin-top: 30px;
+   }
+    }
+
+
 
 
 @media screen and (max-width:450px) {
@@ -244,3 +379,126 @@ footer{
     }
     
 }
+
+
+/* Devices */
+
+/* Ipad pro */
+@media screen and (max-width:1024px) and (height:1366px) {
+    .home{
+        height: auto;
+        min-height: 60vh;
+        position: relative;
+    }
+    .title-cont{
+        width: 70%;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .title-cont{
+        max-width: 100%;
+        
+    }
+    .sub{
+        width: 50%;
+    }
+    }
+
+    /* Ipad Air */
+@media screen and (max-width:820px) and (height:1180px) {
+    .home{
+        min-height: 80vh;
+        position: relative;
+    }
+    }
+
+    /* Ipad Mini */
+@media screen and (max-width:768px) and (height:1024px) {
+    .home{
+        height: auto;
+        min-height: 80vh;
+        position: relative;
+    }
+    }
+
+    /* Ipad pro */
+@media screen and (max-width:1024px) and (height:600px) {
+    .home{
+        height: auto;
+        max-height: 100vh;
+        position: relative;
+    }
+    .title-cont{
+        width: 70%;
+        margin-bottom: 70px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .title-cont{
+        max-width: 100%;
+        
+    }
+    .sub{
+        width: 70%;
+    }
+    .homebtn{
+        margin-top: 20px;
+    }
+    }
+
+    
+    /* Iphone 14 pro max*/
+@media screen and (max-width:450px)  {
+    .home{
+        height: auto;
+    }
+    .title-cont{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .title-cont{
+        max-width: 100%;
+        
+    }
+    .sub{
+        width: 80%;
+    }
+    .homebtn{
+        margin-top: 40px;
+    }
+    .bottom-quote{
+        height: 20%;
+    }
+    }
+
+    /* Iphone 12 pro*/
+@media screen and (max-width:400px)  {
+    .home{
+        height: auto;
+    }
+    .title-cont{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .title-cont{
+        max-width: 100%;
+        
+    }
+    .sub{
+        width: 80%;
+    }
+    .homebtn{
+        margin-top: 40px;
+    }
+    .bottom-quote{
+        height: 15%;
+    }
+    }
