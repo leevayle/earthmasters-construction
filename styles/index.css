@@ -502,3 +502,13 @@ footer{
         height: 15%;
     }
     }
+
+        /* Iphone 12 pro*/
+@media screen and (max-width:360px)  {
+    .sub{
+        width: 70%;
+    }
+    .subtitle{
+        font-size: 25px;
+    }
+    }
