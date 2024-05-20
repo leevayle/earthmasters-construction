@@ -29,7 +29,27 @@ document.getElementById("open").addEventListener("click", () => {
 // window.addEventListener("scroll", handleScroll);
 
 
-// const homeElement = document.querySelector('.home');
+const homeElement = document.querySelector('.home');
+const images = [
+  "url(../images/bgs/man-looking.jpg)",
+  "url(../images/bgs/bulldozer.jpg)",
+  "url(../images/bgs/town-city.jpg)",  // Add more image URLs here
+  "url(../images/bgs/unfinished-tower.jpg)",
+  // ...and so on
+];
+
+let currentImageIndex = 0;
+
+function changeImage() {
+  homeElement.style.backgroundImage = images[currentImageIndex];
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setInterval(changeImage, 5000); // Change image every 5 seconds
+  changeImage(); // Initial image display
+});
+
 // const images = [ // Replace with your image URLs
 //   "url(../images/bgs/man-looking.jpg)",
 //   "url(../images/bgs/bulldozer.jpg)",
