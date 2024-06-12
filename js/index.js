@@ -33,9 +33,9 @@ const homeElement = document.querySelector('.home');
 const images = [
   "url(../images/bgs/man-looking.jpg)",
   "url(../images/bgs/bulldozer.jpg)",
-  "url(../images/bgs/town-city.jpg)",  // Add more image URLs here
+  "url(../images/bgs/town-city.jpg)", 
   "url(../images/bgs/unfinished-tower.jpg)",
-  // ...and so on
+  
 ];
 
 let currentImageIndex = 0;
