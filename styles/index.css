@@ -415,6 +415,7 @@ a{
 #right-div{
     display: flex;
     width: 60%;
+    height: 505px;
     background: linear-gradient(to left,
      rgba(255, 255, 255, 0) 0%, 
     rgba(255, 255, 255, 0.205) 10%,
@@ -433,6 +434,44 @@ a{
     color: #221200;
     text-align: center;
     font-family: 'cocomat',sans-serif;
+}
+.tiles-holder{
+    height: auto;
+    min-height: 300px;
+    width: 70%;
+}
+.prev-next{
+    height: 50%;
+    width: auto;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tile123{
+    width: 200px;
+    height: auto;
+    min-height: 200px;
+    max-height: 200px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.tile1{
+    margin-left: 20%;
+    margin-top: 10%;
+    rotate: 45deg;
+}
+.tile2{
+    margin-left: 28%;
+    margin-top: 15%;
+    rotate: -30deg;
+}
+.tile3{
+    margin-left: 38%;
+    margin-top: 22%;
+    rotate: -10deg;
+    
 }
   
 
@@ -502,14 +541,19 @@ footer{
 }
 #left-div{
     width: 100%;
+    margin-left: -25px;
 }
 #right-div{
     width: 100%;
+    height: auto;
     background: linear-gradient(to top,
      rgba(255, 255, 255, 0) 0%, 
     rgba(255, 255, 255, 0.205) 10%,
     rgba(255, 255, 255, 0.411) 20%,
     rgb(255, 255, 255) 60%);
+}
+.prev-next{
+    display: none;
 }
 }
 @media screen and (max-width:1246px) {
