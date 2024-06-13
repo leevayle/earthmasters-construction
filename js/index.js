@@ -9,9 +9,7 @@ function Hidesidebar() {
     document.getElementById("mobilenavcont").style.left = "-90%";
 }
 
-function handleScroll() {
-    Hidesidebar();
-}
+
 
 document.getElementById("close").addEventListener("click", () => {
     Hidesidebar();
@@ -25,8 +23,10 @@ document.getElementById("open").addEventListener("click", () => {
 //     Hidesidebar();
 // });
 
-// Add scroll event listener to hide the side navigation bar on scroll
-// window.addEventListener("scroll", handleScroll);
+
+// window.addEventListener("scroll", ()=>{
+
+// });
 
 
 const homeElement = document.querySelector('.home');

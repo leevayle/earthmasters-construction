@@ -308,7 +308,7 @@ a{
     min-height: 200px;
     width: 80%;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 .home-tiles{
     width: 30%;
@@ -320,10 +320,15 @@ a{
 .home-tiles:hover .expand{
     width: 40%;
 }
+.home-tiles:hover .home-tiles-pic{
+    width: 110%;
+    margin-left: -10px;
+}
 .home-tiles-pic{
     height: auto;
     max-height: 200px;
     overflow: hidden;
+    transition: all ease-in-out 0.3s;
 }
 .home-tile-title{
     height: auto;
@@ -344,7 +349,91 @@ a{
     font-family: 'cocomat',sans-serif;
 }
 
+.projects{
+    background-color: #070211;
+    height: auto;
+    min-height: 100px;
+}
+.projects-limiter{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.projects-flexed{
+    width: 50%;
+    height: auto;
+    min-height: 20px;
+    margin-bottom: 50px;
+}
+.projectx-tile{
+    transition: all ease-in-out 0.15s;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    color: #f0ff6c;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid rgba(100, 102, 0, 0);
+}
+.projectx-tile:hover{
+    border: 1px solid rgb(100, 102, 0);
+}
+.projects-icon{
+    height: auto;
+}
+.svg-projects{
+    width: 40%;
+    min-width: 40px;
+    max-width: 80px;
+}
+.projects-number{
+    font-family: 'russo one', sans-serif;
+}
+.projects-name{
+    font-family: 'russo one', sans-serif;font-family: 'cocomat', sans-serif;
+    color: #f1f1f1;
+}
 
+.projects-bg{
+   height: auto;
+   min-height: 200px;
+   background-image: url("/images/bgs/town-city.jpg");
+   background-position: center;
+   background-size: cover;
+}
+.projects-tiles-cont{
+    width: 50%;
+    margin: auto;
+    min-height: 300px;
+}
+#left-div{
+    background: transparent;
+    width: 40%;
+}
+#right-div{
+    display: flex;
+    width: 60%;
+    background: linear-gradient(to left,
+     rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.205) 10%,
+    rgba(255, 255, 255, 0.411) 20%,
+    rgb(255, 255, 255) 60%);
+}
+.project-portfolio{
+    width: auto;
+    font-family: 'russo one', sans-serif;
+    color: #614200;
+    font-size: xx-large;
+    text-align: center;
+}
+.portfolio-sub{
+    font-size: x-large;
+    color: #221200;
+    text-align: center;
+    font-family: 'cocomat',sans-serif;
+}
   
 
 
@@ -401,6 +490,26 @@ footer{
     width: 90%;
     margin: auto;
     margin-bottom: 50px;
+}
+.projects-limiter{
+    display: block;
+}
+.projects-flexed{
+    width: 100%;
+}
+.projects-bg-limiter{
+    display: block;
+}
+#left-div{
+    width: 100%;
+}
+#right-div{
+    width: 100%;
+    background: linear-gradient(to top,
+     rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.205) 10%,
+    rgba(255, 255, 255, 0.411) 20%,
+    rgb(255, 255, 255) 60%);
 }
 }
 @media screen and (max-width:1246px) {
