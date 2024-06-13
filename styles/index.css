@@ -399,7 +399,7 @@ a{
 .projects-bg{
    height: auto;
    min-height: 200px;
-   background-image: url("/images/bgs/town-city.jpg");
+   background-image: url(../images/bgs/town-city.jpg);
    background-position: center;
    background-size: cover;
 }
@@ -456,6 +456,7 @@ a{
     border: 3px solid rgb(255, 255, 255);
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.671) 0px 25px 30px 5px, rgba(0, 0, 0, 0.541) 0px 0px 18px -5px;    
 }
 .tile1{
     margin-left: 20%;

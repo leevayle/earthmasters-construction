@@ -31,10 +31,10 @@ document.getElementById("open").addEventListener("click", () => {
 
 const homeElement = document.querySelector('.home');
 const images = [
-  "url(../images/bgs/man-looking.jpg)",
-  "url(../images/bgs/bulldozer.jpg)",
-  "url(../images/bgs/town-city.jpg)", 
-  "url(../images/bgs/unfinished-tower.jpg)",
+  "url(images/bgs/man-looking.jpg)",
+  "url(images/bgs/bulldozer.jpg)",
+  "url(images/bgs/town-city.jpg)", 
+  "url(images/bgs/unfinished-tower.jpg)",
   
 ];
 
