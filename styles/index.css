@@ -475,6 +475,74 @@ a{
     
 }
   
+/* CONTACT US SECTION */
+.contact-limiter{
+    width: 95%;
+    max-width: 900px;
+    height: 400px;
+    margin-bottom: 150px;
+    margin-top: 70px;
+}
+.contact-flex{
+    display: flex;
+    margin-top: 50px;
+}
+.cont-half{
+    width: 50%;
+}
+
+.contact-gradient{
+    /* background: linear-gradient(to right,
+     rgb(255, 255, 255) 30%,     
+     rgba(202, 202, 25, 0.507) 70%,
+     rgba(207, 166, 53, 0.74) 90%); */
+}
+/* .form-cont{
+    display: block;
+} */
+input, textarea{
+    width: 85%;
+    margin-top: 10px;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(167, 155, 0);
+    display: flex;
+    margin: auto;
+}
+textarea{
+    padding-top: 15px;
+    min-height: 70px;
+    max-height: 71px;
+    max-width: 85%;
+    min-width: 85%;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+.contact-submit{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid  rgb(167, 155, 0);
+
+}
+.contact-submit:hover{
+    background-color:rgb(167, 155, 0);
+    cursor: pointer;
+    
+}
+.title-contact{
+    font-family: 'cocomat', sans-serif;
+    font-size: large;
+    margin-left: 20px;
+    color: rgb(165, 91, 42);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 
 
 
@@ -555,6 +623,13 @@ footer{
 }
 .prev-next{
     display: none;
+}
+.contact-flex{
+    display: block;
+}
+.cont-half{
+    width: 100%;
+    margin-top: 20px;
 }
 }
 @media screen and (max-width:1246px) {
@@ -679,6 +754,12 @@ footer{
     .bottom-quote{
         height: 20%;
     }
+    /* .contact-flex{
+        display: block;
+    }
+    .cont-half{
+        width: 100%;
+    } */
     }
 
     /* Iphone 12 pro*/
