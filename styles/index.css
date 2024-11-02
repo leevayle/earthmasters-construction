@@ -229,7 +229,7 @@ a{
       
 }
 .title-cont{
-    height: 25%;
+    height: auto;
     width: auto;
     max-width: 55%;
     margin: auto;
@@ -240,12 +240,10 @@ a{
     color: white;
     font-size: 50px;
     text-align: center;
-    font-family: 'russo one',sans-serif;    
-    padding-top: 50px;
-    bottom: 0px;
+    font-family: 'russo one',sans-serif;
 }
 .sub{
-    width: 45%;
+    width: 50%;
     margin: auto;
 }
 .subtitle{
@@ -256,7 +254,7 @@ a{
     font-family: 'lexand',sans-serif;
     width: auto;
     margin: auto;
-    margin-top: 15px;
+    margin-top: auto;
     margin-bottom: 20px;
 }
 .actionbtn{
@@ -544,9 +542,23 @@ input:focus, textarea:focus{
     margin-bottom: 30px;
 }
 
+.socials{
+    background-color:rgb(184, 119, 0);
+    height: 200px;
+}
+.socials-limiter{
+    height: 100px;
+    width: 100%;
+    max-width: 1200px;
+}
 
 
 
+.partners{
+    height: 100px;
+    background-color: #181818;
+    display: none;
+}
 
 
 
@@ -775,7 +787,7 @@ footer{
         font-size: 40px;
     }
     .title-cont{
-        max-width: 100%;
+        max-width: 80%;
         
     }
     .sub{
