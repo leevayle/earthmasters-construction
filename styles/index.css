@@ -257,16 +257,15 @@ a{
     margin-top: auto;
     margin-bottom: 20px;
 }
+
 .actionbtn{
     height: auto;
-    bottom: 0px;
-}
-.actionbtn{
     width: auto;
     max-width: 200px;
     margin: auto;
     padding: 5px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .homebtn {
     width: 200px;
@@ -287,7 +286,6 @@ a{
     color: #000000;
   }
   .bottom-quote{
-    bottom: 0px;
     background-color: #00000098;
     height: 80px;
     color: #b9b9b9;
